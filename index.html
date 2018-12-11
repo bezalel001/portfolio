@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Normalise html elements so all browsers renders them consistently-->
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+
+  <!-- Responsive grid system -->
+  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+
+  <!-- Animated headline -->
+  <link rel="stylesheet" href="vendors/css/animated-headlines/animated-headline.css">
+
+  <!-- Animate.CSS -->
+  <link rel="stylesheet" href="vendors/css/animate/animate.css">
+
+  <!-- Google Font: Lato -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700" rel="stylesheet">
+
+
+
+  <!--Custom css -->
+  <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+</head>
+
+<body>
+
+  <header id="home" class="parallax animated fadeIn">
+    <nav>
+      <div class="row">
+        
+        <ul class="main-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#works">My Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__hero-text-box">
+      <h1 class="animated slideInDown">Michael Ogu</h1>
+      <h2 class="cd-headline clip">
+        <span id="experience" class="animated fadeInLeft">The experienced </span>
+        <span id="wrapper" class="cd-words-wrapper  animated fadeInRight">
+          <b class="is-visible">Management Consultant</b>
+          <b>Teacher</b>
+          <b>Automatic Control & Systems Engineer</b>
+          <b>Software Developer</b>
+          <b>Musician</b>
+        </span>
+      </h2>
+      <div id="hero-btn-box">
+        <a class="btn header__btn-full animated slideInUp js-scroll-to-skills" href="#">My Skills</a>
+        <a class="btn header__btn-ghost animated slideInUp js-scroll-to-works" href="#">My Works</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-skills">
+    <div class="row">
+      <h2 class="wow animated fadeInDown" data-wow-duration=".5s" data-wow-delay=".5s">Skills</h2>
+      <p id="skills-intro" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">Modelling dynamical systems from first principles via Newton’s, Kirchoff’s or other known physical laws is often challenging and costly, requiring substantial expertise. An alternative is offered through “system identification” that takes observations of inputs and outputs from physical systems and infers or estimates a dynamical model directly.</p>
+    </div>
+
+    <div class="row">
+      <div class="col span-1-of-4 box wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+        <div class="skill-title">
+          <ion-icon name="desktop"></ion-icon>
+          <h3>Web Design</h3>
+        </div>
+
+        <p class="skill-description">Clean HTML5. Modern CSS3 styles & Responsive Design</p>
+      </div>
+      <div class="col span-1-of-4 box wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+        <div class="skill-title">
+          <ion-icon name="code-working"></ion-icon>
+          <h3>Software Development</h3>
+        </div>
+        <p class="skill-description">Modern Web & Mobile applications JavaSCript, Python and Swift</p>
+      </div>
+      <div class="col span-1-of-4 box wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+        <div class="skill-title">
+          <ion-icon name="jet"></ion-icon>
+          <h3>Systems & Control</h3>
+        </div>
+
+        <p class="skill-description">Mathematical & Agent-based Modelling, Systems Identification, State Space Control & Design, Predictive Control, Intelligent & Multi-agent Systems</p>
+      </div>
+      <div class="col span-1-of-4 box wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+        <div class="skill-title">
+          <ion-icon name="business"></ion-icon>
+          <h3>Business Strategy</h3>
+        </div>
+        <p class="skill-description">Strategic Plan, Business Process Improvement, Organisational Structure, Business Data Analytics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <!--- Right diagonal background image -->
+    <div id="about-diagonal-image" class="parallax"></div>
+    <!-- Left section -->
+    <div class="row">
+      <div class="col span-1-of-3">
+        <div id="about-content-box">
+          <div id="about-content-box-outer">
+            <div id="about-content-box-inner">
+              <h2 class="wow animated fadeInDown" data-wow-duration=".5s" data-wow-delay=".5s" id="about-title">About me</h2>
+              <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"><b>My values dictate how I work!</b></p><br>
+              <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"><strong>Values: </strong><em>Problem&mdash;solving, Innovation, Excellence, Empathy & Integrity</em></p><br>
+
+              <p id="about-decription" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">I have a massive passion for understanding people and businesses and connecting their needs to technology.</p>
+              <div id="about-btn">
+                <a id="work-btn" class="btn header__btn-ghost animated slideInUp" href="#works">My Works</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--My Works Section-->
+  <section id="works" class="section-works clearfix">
+    <div class="row">
+      <h2 class="wow animated fadeInDown" data-wow-duration=".5s" data-wow-delay=".5s">My Works</h2>
+    </div>
+    <ul class="works-showcase">
+      <li>
+        <figure class="work-photo">
+          <img src="resources/css/images/workspace002.jpg" alt="cpslab">
+
+        </figure>
+      </li>
+      <li>
+        <figure class="work-photo">
+          <img src="resources/css/images/bmw001.jpg" alt="my work">
+
+        </figure>
+      </li>
+      <li>
+        <figure class="work-photo">
+          <img src="resources/css/images/workspace001.jpg" alt="my work">
+
+        </figure>
+      </li>
+    </ul>
+    <ul class="works-showcase">
+      <li>
+        <figure class="work-photo">
+          <img src="resources/css/images/mercedez001.jpg" alt="my work">
+
+        </figure>
+      </li>
+      <li>
+        <figure class="work-photo">
+          <img src="resources/css/images/workspace005.jpg" alt="my work">
+
+        </figure>
+      </li>
+      <li>
+        <figure class="work-photo">
+          <img src="resources/css/images/workspace007.jpg" alt="my work">
+
+        </figure>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="section-form">
+    <div class="row">
+      <h2>Get in touch</h2>
+    </div>
+    <div class="row">
+      <form>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="name">Name</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="email">Email</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label>Drop me a line </label>
+          </div>
+          <div class="col span-2-of-3">
+            <textarea name="message" placeholder="Your message"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label>&nbsp;</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="submit" value="Send it!">
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="row">
+      <div class="col span-1-0f-2">
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#works">Works</a></li>
+        </ul>
+      </div>
+      <div class="col span-1-of-2">
+        <ul class="social-links">
+          <li><a href="#">
+              <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon id="twitter" name="logo-twitter"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon id="linkedin" name="logo-linkedin"></ion-icon>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <p>
+        Copyright &copy; 2018 by Michael Ogu. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="vendors/js/animated-headlines/jquery-2.1.1.js"></script>
+  <!-- Modernizr -->
+  <script src="vendors/js/animated-headlines/modernizr.js"></script>
+
+  <!-- Animated headline -->
+  <script src="vendors/js/animated-headlines/main.js"></script>
+  <!-- unicon components -->
+  <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+
+  <!-- WOW js -->
+  <script src="vendors/js/wow/wow.min.js"></script>  
+  
+  <!-- Way points -->
+  <script src="vendors/js/waypoints/jquery.waypoints.min.js"></script>
+  <!--Custom js -->
+  <script src="resources/js/script.js"></script>
+</body>
+
+</html>

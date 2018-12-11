@@ -1,0 +1,491 @@
+/*
+  =================================================
+  General settings
+  =================================================
+*/
+/* Select all elements and set their margin to 0 */
+/* set box-sizing to border-box*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* overall and initial project settings */
+html,
+body {
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  /* Render text perfectly */
+  overflow-x: hidden;
+
+}
+
+/* All contents  on the page will be placed in rows defined in grid.css */
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*
+  =================================================
+  Header
+  =================================================
+*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/workspace001.jpg);
+  /*the image is too zoomed in*/
+  height: 100vh;
+  /* Let the image fill whole screen */
+  ;
+}
+
+/*Centre the hero text box. */
+/* To do this, the element must have an absolute positioning */
+.header__hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #fff;
+  font-size: 700%;
+  font-weight: 250;
+  letter-spacing: 2px;
+  margin: 0;
+  /*the normalize css introduced some margins on this elem. We remove them here*/
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+span {
+  color: #fff;
+  font-size: 300%: margin-bottom: 20px;
+}
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 30px;
+  margin-right: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.header__btn-full:link,
+.header__btn-full:visited,
+input[type=submit] {
+  background-color: #3742fa;
+  border: 1px solid #3742fa;
+}
+
+.header__btn-ghost:link,
+.header__btn-ghost:visited {
+  border: 1px solid #3742fa;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: #0614f8;
+}
+
+.header__btn-ghost:hover,
+.header__btn-ghost:active,
+.header__btn-full:hover,
+.header__btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  border: 1px solid #0614f8;
+}
+
+.header__btn-ghost:hover,
+.header__btn-ghost:active {
+  border: 1px solid #3742fa;
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+  float: left;
+  margin-top: 50px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+  padding: 10px 0;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #0614f8;
+}
+
+.sticky {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 2px 2px #000;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #fff;
+  padding: 16px 0;
+}
+
+/*
+  =================================================
+  Parallax
+  =================================================
+*/
+
+.parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*
+  =================================================
+  Animation Css
+  =================================================
+*/
+
+
+header {
+  animation-delay: .1s;
+  animation-duration: .5s;
+}
+
+h1 {
+  animation-delay: .5s;
+  animation-duration: 1s;
+}
+
+span,
+a {
+  animation-delay: .5s;
+  animation-duration: 2s;
+}
+
+/*
+  =================================================
+  Section
+  =================================================
+*/
+
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #0614f8;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#skills-intro {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box {
+  padding: 1%;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 30px;
+}
+
+#skills {
+  background-color: #fcfdff;
+}
+
+.skill-description {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*
+  =================================================
+  icons
+  =================================================
+*/
+
+.box ion-icon {
+  display: block;
+  font-size: 300%;
+  color: #5352ed;
+}
+
+/*
+  =================================================
+  About
+  =================================================
+*/
+#about {
+  background-color: #ebf5ff;
+}
+
+#about-content-box {
+  float: left;
+  height: 700px;
+}
+
+#about-content-box-outer {
+  width: 100%;
+  height: 100%;
+  display: table;
+  ;
+}
+
+#about-content-box-inner {
+  display: table-cell;
+  vertical-align: middle
+}
+
+.about-content-box-inner h2 {
+  text-align: left;
+}
+
+#about-title {
+  text-align: left;
+}
+
+#about h2::after {
+  margin-left: 0;
+}
+
+#work-btn {
+  color: #000;
+  font-weight: bold;
+}
+
+#work-btn:hover,
+#work-btn:active {
+  color: #fff;
+}
+
+#about-diagonal-image {
+  width: 60%;
+  height: 700px;
+  float: right;
+  background-image: url(images/mine.jpg);
+  background-size: contain;
+  border-left: 150px solid #ebf5ff;
+  border-top: 700px solid transparent;
+  margin-right: 0;
+}
+
+
+/*
+  =================================================
+  Works
+  =================================================
+*/
+
+.works-showcase {
+  list-style: none;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.works-showcase li {
+  display: block;
+  float: left;
+  width: 33%;
+}
+
+.work-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.work-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s opacity 0.5s;
+}
+
+.work-photo img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+/*
+  =================================================
+  Form
+  =================================================
+*/
+
+#contact {
+  background-color: ebf5ff;
+}
+
+section-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*
+  =================================================
+  Footer
+  =================================================
+*/
+
+footer {
+  background-color: #6a6868;
+  padding: 40px;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color .3s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+#facebook:hover,
+#facebook:active {
+  color: #3b5999;
+}
+
+#twitter:hover,
+#twitter:active {
+  color: #55acee;
+}
+
+#linkedin:hover,
+#linkedin:active {
+  color: #0077B5;
+}
